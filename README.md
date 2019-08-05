@@ -4,5 +4,5 @@ This is because developers must include support at the application level as well
 As of this writing support is not included in popular applications such as Retroarch.
 This script adds on multitouch support to practically any X11 application.
 A script to easily run Retroarch along with the main script is included.
-The support script also disables and reenables easystroke if it is used.
+The support script also disables and reenables Easystroke if it is used.
 
