@@ -6,3 +6,4 @@ This script adds on multitouch support to practically any X11 application.
 A script to easily run Retroarch along with the main script is included.
 The support script also disables and reenables Easystroke if it is used.
 
+Patch 1 adds automatic touch screen detection and more comments.
