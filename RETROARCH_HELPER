@@ -1,0 +1,20 @@
+#!/bin/bash
+
+#restart easystroke after retroarch closes
+#needed because kickoff will not execute disown
+
+while true
+do
+
+STATUS=$(cat ~/RETROARCH_STATUS)
+
+if [ $STATUS -eq "1" ]
+then
+echo 0 > ~/RETROARCH_STATUS
+easystroke & disown
+fi
+
+sleep 5
+
+done
+

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+#if z is held down then retroarch can stop responding to input after loading content
+xdotool keyup z
+
+#easystroke introduces huge overlay input latency
+killall easystroke
+
+#~/LINUX_GENERIC_MULTITOUCH&
+#experimental version
+~/LINUX_GENERIC_MULTITOUCH.hybrid&
+#~/LINUX_GENERIC_MULTITOUCH.proposed&
+
+#retroarch
+#run from build folder instead
+~/libretro-super/retroarch/retroarch
+
+#killall LINUX_GENERIC_MULTITOUCH
+#experimental version
+killall LINUX_GENERIC_MULTITOUCH.hybrid
+#killall LINUX_GENERIC_MULTITOUCH.proposed
+
+#restart easystroke and disassociate from script
+#easystroke & disown
+#kde does not execute disown so bypass
+echo 1 > ~/RETROARCH_STATUS
+
