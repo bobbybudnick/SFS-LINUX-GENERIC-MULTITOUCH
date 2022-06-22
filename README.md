@@ -20,7 +20,7 @@ Currently optimized for the 5" waveshare screen at 720x1280 vertical
 The script needs to be modified for other touchscreens  
 There are 3 hangup points  
 Search for "porting cue" in the script to find these points automatically  
-1 - automatic screen device detection as you have noted  
+1 - automatic screen device detection  
 It searches automatically now for keywords "Touch" and "Waveshare"  
 You may have to edit this as needed  
 2 - screen resolution factor scaling  
